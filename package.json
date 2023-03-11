@@ -41,5 +41,6 @@
   },
   "dependencies": {
     "vsce": "^2.15.0"
-  }
+  },
+    "license": "(MIT OR Apache-2.0)"
 }
