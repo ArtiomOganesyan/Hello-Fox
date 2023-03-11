@@ -20,6 +20,16 @@ function activate(context) {
 	let disposable = vscode.commands.registerCommand('hello-fox.helloWorld', function () {
 		// The code you place here will be executed every time your command is executed
 
+		const editor = vscode.window.activeTextEditor;
+
+        if (editor) {
+            let document = editor.document;
+
+            const icon = document.querySelector("div.editor-group-watermark>div.letterpress");
+			icon.style.backgroundImage = 'url(https://abali.ru/wp-content/uploads/2013/12/uporotij_lis.png)'
+        }
+
+
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World from Hello_Fox!');
 	});
