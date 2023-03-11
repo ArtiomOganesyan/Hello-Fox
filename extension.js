@@ -23,10 +23,10 @@ function activate(context) {
 		const editor = vscode.window.activeTextEditor;
 
         if (editor) {
-            let document = editor.document;
 
             const icon = document.querySelector("div.editor-group-watermark>div.letterpress");
 			icon.style.backgroundImage = 'url(https://abali.ru/wp-content/uploads/2013/12/uporotij_lis.png)'
+
         }
 
 
